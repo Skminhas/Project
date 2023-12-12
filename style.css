@@ -1,0 +1,581 @@
+.body{
+    font-family: 'Lato', sans-serif;
+  }
+  .header{
+    background-color: #8d691d;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+  }
+  .header-text{
+    font-size: 16px;
+    align-items: centre;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .second-container{
+    align-items: center;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;  
+  }
+  .mb-left{
+    display: flex;
+    justify-content: space-between;
+  }
+  .mb-left-text{
+    font-size: 16px;
+    color: #8d691d;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: all 420ms ease-in-out;
+  }
+  .mb-left-text:hover{
+    background-color: #8d691d;
+    color: white;
+  }
+  .mariab-logo{
+    cursor: pointer;
+  }
+  .mb-right{
+    color: #8d691d;
+    padding: 15px 25px;
+    cursor: pointer;
+  }
+  .mb-right p{
+    margin-left: 10px;
+  }
+  .navigator{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    align-items: center;
+    border: 1px solid lightgrey;
+    padding: 15px 25px;
+    width: calc(100% - 50px);
+  }
+  .nav {
+    display: none;
+    flex-direction: row;
+    
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  @media (min-width: 1085px) {
+    .nav {
+      display: flex;
+    }
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .nav li {
+    font-size: 14px;
+    
+    color: #8d691d;
+    margin: 0 20px;
+    align-items: left;
+    cursor: pointer;
+  }
+  .dropdown-menu{
+     background-color: white;
+    box-shadow: 0 0 2rem rgba(0,0,0,.1); 
+    display: none;
+    padding: 5px;
+    position: absolute; 
+    top: 160px; 
+    width: 150px;
+    z-index: 10;
+  }
+  .dropdown-menu#menu-1 {
+    left: 40px;
+  }
+  .dropdown-menu#menu-2 {
+    left: 130px;
+    min-width: 150px; 
+  }
+  .dropdown-menu#menu-3 {
+    left: 260px;
+    min-width: 150px;
+  }
+  .menu-item-list {
+    margin: 0;
+    padding-left: 0;
+  }
+  #menu-2 .menu-item-list, 
+  #menu-3 .menu-item-list {
+    column-count: 1;
+    column-gap: 20px;
+  }
+  .menu-item-list li a,
+  .menu-item-list li a:visited,
+  .menu-item-list li a:focus {
+    color: #454545;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .menu-item-list li a:hover {
+    background-color: rgb(242,242,242);
+    color: #1264a3;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .show-menu {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  .hidden {
+      display: none !important;
+  }
+/*
+  .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      -webkit-clip-path: inset(50%);
+      clip-path: inset(50%);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap; 
+  }
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus {
+      clip: auto;
+      clip-path: none;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+      white-space: inherit;
+  }
+  
+  .invisible {
+      visibility: hidden;
+  }
+  */
+  .main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    background-color: #e3e4e6;
+    padding: 15px;
+  }
+  @media (max-width: 600px) {
+    .main-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+  .main-grid-item{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+  }
+  .item-image{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+  }
+  .item-image-1{
+    background-image: url(https://www.mariab.ae/cdn/shop/files/SFW2362BlueFront_1800x1800.jpg?v=1700822795%22);
+  }
+  .item-image-2{
+    background-image: url(https://www.mariab.ae/cdn/shop/products/SFW2308FrontCoper_1800x1800.jpg?v=1700577856%22);
+  }
+  .item-image-3{
+    background-image: url(https://www.mariab.ae/cdn/shop/products/SF-W23-34-Pink_1800x1800.jpg?v=1700577827%22);
+  }
+  .item-image-4{
+    background-image: url(https://www.mariab.ae/cdn/shop/products/SF-W23-80-Pink_1800x1800.jpg?v=1699970144%22);
+  }
+  .item-image-5{
+    background-image: url(https://www.mariab.ae/cdn/shop/products/SF-W23-18-Pink_1800x1800.jpg?v=1696939738%22);
+  }
+  .item-image-6{
+    background-image: url(https://www.mariab.ae/cdn/shop/products/SF-W23-02-TealGreen_1800x1800.jpg?v=1697467764%22);
+  }
+  
+  /*  item page style   */
+
+  .article-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    background-color: #e3e4e6;
+    padding: 15px;
+  }
+  .article-p{
+    margin-left: 30px;
+    font-size:14px;
+  }
+  .artcle-image{
+    background-size: cover;
+    background-position: center center;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .article-description{
+    margin-left: 30px;
+  }
+  
+  .product-block {
+      margin-bottom: 0;
+      width: 100%;
+      display: inline-block;
+  }
+  .template-product .h2.secc.product-single__title {
+      font-size: 21px;
+      line-height: 26px;
+      color: #000;
+      letter-spacing: .02em;
+      font-style: normal;
+      float: none;
+      text-transform: none;
+      padding: 0;
+      
+      text-align: left;
+  }
+  .template-product .h2.secc.product-single__title {
+      font-size: 21px;
+      line-height: 26px;
+      color: #000;
+      letter-spacing: .02em;
+      font-style: normal;
+      float: none;
+      text-transform: none;
+      padding: 0;
+      margin-right: 50px;
+      text-align: left;
+  }
+  .product-single__sku {
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 14px;
+      color: rgba(0,0,0,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 2px solid rgba(0,0,0,0.5);
+      padding-top: 0px !important;
+      margin-top: 0px;
+  }
+  .product-single__sku {
+      margin-bottom: 5px;
+  }
+  .product-block p {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 900;
+      padding-top: 10px;
+      line-height: 14px;
+      color: rgba(0,0,0,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+  }
+  p {
+      margin: 0 0 15px;
+  }
+  .season-div {
+      width: 100%;
+      display: inline-block;
+      margin: 0 0 10px;
+  }
+  .single-price{
+      font-size: 18px;
+      line-height: 18px;
+      color: #000;
+      letter-spacing: .2em;
+  }
+  .gst {
+      font-size: 12px;
+      line-height: 16px;
+      color: red;
+      padding-bottom: 20px;
+      letter-spacing: .025em;
+      padding-top: 5px;
+  }
+  .swatch-attribute {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+  }
+  .size-chart{
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+  .button-div{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .cart-button{
+      
+      line-height: 1.42;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .3em;
+      padding: 11px 20px;
+      margin: 0;
+      width: auto;
+      min-width: 90px;
+      vertical-align: middle;
+      cursor: pointer;
+      border: 1px solid transparent;
+      color: white;
+      background: #8d691d;
+  }
+  
+  span{
+      font-size: 14px;
+      line-height: 30px;
+      color: rgba(0,0,0,.8);
+      margin: 0;
+      letter-spacing: .05em;
+      font-weight: 500;
+      text-transform: inherit;
+  } 
+    
+
+  .inside-element{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  .size{
+    color: gray;
+    font-size:15px;
+  }
+  .item-name{
+    margin-left:20px;
+  }
+  .new-old{
+    position: absolute;
+      top: 10px;
+      right: 10px;
+      line-height: 1;
+      padding: 6px 5px 6px 7px;
+      background-color: #fff!important;
+      color: #fff;
+      z-index: 2;
+      transition: opacity .4s ease;
+      width: auto;
+      text-align: center;
+      font-size: 11px!important;
+      line-height: 15px;
+      color: #8d691d!important;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 3px;
+  }
+  .bottom-info-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+  }
+  .bottom-info-text{
+      display: inline-block;
+      padding: 4px 0;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #000000b8;
+      cursor: pointer;
+  }
+  .bottom-info-text:hover{
+    color: black;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-details-wrapper {
+      width: 100%;
+      border-bottom: 1px solid #8d691d;
+      float: left;
+      padding-top: 20px;
+  }
+  .footer-details.reachus-details {
+      width: 50%;
+      float: left;
+  }
+  .reach-us li.phone {
+      padding-left: 32px;
+      background-image: url(https://cdn.shopify.com/s/files/1/0620/8788/9062/files/phone-icon.png?v=1664776449);
+  }
+  .reach-us li {
+      display: inline-block;
+      background-size: 22px;
+      background-position: 3px -1px;
+      vertical-align: top;
+      font-size: 12px;
+      line-height: 21px;
+      color: #8d691d;
+      margin: 0 50px 0 0;
+      padding: 0;
+      background-repeat: no-repeat;
+      cursor: pointer;
+  }
+  ul {
+      margin: 0 0 15px 30px;
+      padding: 0;
+      text-rendering: optimizeLegibility;
+  }
+  .reach-us li.email {
+      padding-left: 36px;
+      background-image: url(https://cdn.shopify.com/s/files/1/0620/8788/9062/files/email-icon.png?v=1664776449);
+  }
+  
+  .footer-details.social-details {
+      width: 50%;
+      float: right;
+      text-align: right;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .footer-details.social-details {
+      width: 13%;
+      float: right;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      padding-left: 15px;
+      margin-bottom: 15px;
+    }
+    .social-links li {
+      margin: 0 0 0 10px;
+      vertical-align: top;
+    }
+    .social-links li {
+      display: inline-block;
+      height: 30px;
+      margin: 0 0 0 50px;
+    }
+    li {
+      margin-bottom: 0.25em;
+    }
+    .social-links li.facebook a {
+      background-image: url(https://cdn.shopify.com/s/files/1/0620/8788/9062/files/fb-icon.png?v=1664776449);
+    }
+    .social-links li a {
+      display: block;
+      font-size: 12px;
+      line-height: 15px;
+      color: #8d691d;
+      height: 21px;
+      padding: 1px 0 0;
+      text-decoration: none;
+      padding: 2px 0 0 36px;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: auto 21px;
+    }
+    .social-links li.instagram a {
+      background-image: url(https://cdn.shopify.com/s/files/1/0620/8788/9062/files/inst-icon.png?v=1664776449);
+    }
+    .social-links li.twitter a {
+      background-image: url(https://cdn.shopify.com/s/files/1/0620/8788/9062/files/black_e5f10606-7465-4ae6-9bcb-e72e37e45e0d.png?v=1692268594);
+    }
+  }
+
+
+  /*  hidden window    */
+.cart-main{
+  width: 40%;
+  margin-left: 60%;
+  margin-right: 50px;
+  display: none;
+  position: absolute;
+  z-index: 120;
+}
+.cart-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  padding: 4px 10px;
+  background-color: white;
+}
+.cart-contents{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightgrey;
+}
+.cart-detail{
+  margin-right:10px;
+}
+.cart-p{
+    font-size: 14px;
+    line-height: 18px;
+    color: #8d691d;
+    text-transform: uppercase;
+    text-align: left;
+    border: none;
+    font-weight: 400;
+    letter-spacing: .05em;
+}
+.name-of-item{
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+span{
+  color: gray;
+  font-size: 12px;
+}
+.checkout{
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: 1px solid #8d691d;
+  color: #8d691d;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+  outline: none !important;
+  box-shadow: 0 0 0 #fff !important; 
+}
+.checkout:hover{
+  color: white;
+  background-color: #8d691d;
+}
+.total-amount{
+  background-color: lightgray;
+}

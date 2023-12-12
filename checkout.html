@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="checkout-style.css">
+  </head>
+  <body>
+    <h2>Checkout Information</h2>
+    <p>Cart > <span>Shipping</span> > Payment</p>
+    <div class="checkout-container">
+            <div class="customer-detail">
+         
+              <form action="/submit" method="post" class="cart-form">
+                <h5>Contact</h5>
+                <div class="email">
+                  <input type="text" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="checkbox">
+                 <input class="input-checkbox"
+type="checkbox" value="1" checked="checked" name="" 
+id="accepts_marketing">
+                  <label>Email me with news and offers</label>
+                </div>
+                <h5>Shipping Information</h5> 
+                  <div class="fname">
+                     <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                  </div>
+                  <div class="lname">  
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                  </div>
+                  <div class="address"> 
+                     <input type="text" id="faddress" name="address" placeholder="Address" required>
+                  </div>
+                  <div class="suburb">
+                    <input type="text" id="suburb" name="suburb" placeholder="suburb">
+                  </div>
+                  <div class="state">
+                    <input type="text" id="suburb" name="suburb" placeholder="suburb">
+                  </div>
+                  <div class="po">
+                    <input type="text" id="postCode" name="postCode" placeholder="Post Code">
+                  </div>
+                  <div class="phone">
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+                  </div>
+                  <div class="credit-info">
+                          
+                  </div>
+                  <div class="btn-div">
+                   <button type="submit" class="btn">Place Order</button>
+                  </div>
+                    
+                </form>
+
+            </div>
+            <div class="item-detail">
+               <div class="item-1">
+                 <div class="img1">
+                  <img src="https://cdn.shopify.com/s/files/1/0551/4333/3974/files/SFW2362BlueFront_small.jpg?v=1700822795">
+                 </div>
+                 <div class="detail">
+                  <span>Suit Blue SF-W23-62</span>
+                  <p>XS / Blue</p>
+                 </div>
+                 <div>
+                   <h4>Price: $176</h4>
+                 </div>
+               </div>
+              <div class="discount">
+                <input type="text" placeholder="Discount Code">
+                <button class="btn-discount">
+                  Apply
+                </button>
+              </div>
+              <div class="total">
+                <p>Subtotal: </p>
+                <h4>$176</h4>
+              </div>
+              <div class="total">
+                <p>Shipping: </p>
+                <h4>$40</h4>
+              </div>
+              <div class="total">
+                <p>Total:     </p>
+                <h3>$210</h3>
+              </div>
+            </div>
+            
+        </div>
+  <body>
+</html>
