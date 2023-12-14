@@ -27,11 +27,10 @@ function menuOneShow(){
   document.getElementById('menu-3').addEventListener('mouseleave', menusHide);
   
   
-  
   function openNewPage() {
           var newPageUrl = 'item.html';
-  
-          window.open(newPageUrl, '_blank'); 
+          window.location.href = newPageUrl;
+          //window.open(newPageUrl, '_blank'); 
       }
 
   function openPopup() {
@@ -46,5 +45,6 @@ function menuOneShow(){
 
     function openCheckOut() {
       var newPageUrl = 'checkout.html';
-      window.open(newPageUrl, '_blank'); 
+      window.location.href = newPageUrl;
+      //window.open(newPageUrl, '_blank'); 
     }

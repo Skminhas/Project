@@ -1,5 +1,5 @@
 body {
-    background: url(https://cdn.shopify.com/s/files/1/0409/0514/6529/files/main-bg.png?v=1663157564) repeat center center;
+  background: url(https://cdn.shopify.com/s/files/1/0409/0514/6529/files/main-bg.png?v=1663157564) repeat center center;
   float: left;
   width: 100%;
   }
@@ -8,6 +8,11 @@ body {
       flex-direction: row;
       
   }
+  @media screen and (max-width: 767px) {
+    .checkout-container {
+      flex-direction: column;
+    }
+  } 
   .customer-detail{
     margin-top: 10px;
     width: 50%;
@@ -22,6 +27,19 @@ body {
       border: 1px solid #ccc;
       
   }
+  
+  @media screen and (max-width: 767px)  {
+    input[type="text"] {
+      width: 200px;
+      height: 30px;
+      padding: 10px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+      border: 1px solid #ccc;
+      
+  }
+  }
+
   label {
       font-size: 12px;
       align-items: left;
